@@ -9,7 +9,7 @@ class Solution:
             prevMap[n] = i
 
 
-kiwi
+kiw2
 lalalalala
 apple
 banana
