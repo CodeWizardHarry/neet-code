@@ -9,5 +9,7 @@ class Solution:
             prevMap[n] = i
 
 
-
-lalalalalallalalalal
+kiwi
+lalalalala
+apple
+banana
