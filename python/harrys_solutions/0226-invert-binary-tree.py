@@ -12,7 +12,6 @@ class Solution:
         
         Returns:
         - TreeeNode: Root of the tree
-        
         """
         
         if not root:

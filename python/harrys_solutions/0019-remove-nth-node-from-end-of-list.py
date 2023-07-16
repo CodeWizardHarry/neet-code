@@ -11,7 +11,7 @@ class Solution:
         and return its head.
 
         steps:
-        1. create dummy node, left and right pointers
+        1. create a dummy node, left and right pointers
         2. find the nth node from the end of the list
         3. remove it
 
@@ -22,7 +22,6 @@ class Solution:
         left, right = dummy, head
 
         #step2
-
         while n > 0:
             n-=1
             right = right.next
