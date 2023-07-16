@@ -10,7 +10,7 @@ class Solution:
         """"
         Given the root of a binary tree, invert the tree
         
-        Return:
+        Returns:
         - TreeeNode: Root of the tree
         
         """
@@ -31,7 +31,7 @@ class Solution:
         
       
     
-        
+        #official solution
         # if not root:
         #     return None
 
