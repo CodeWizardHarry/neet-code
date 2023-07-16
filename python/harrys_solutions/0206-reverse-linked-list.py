@@ -37,5 +37,5 @@ class Solution:
         print("END")          
         
 s = Solution()
-ll = s.to_linked_list([1,2,3,4,5])
-s.print_list(ll)
+list1 = s.to_linked_list([1,2,3,4,5])
+s.print_list(list1)
