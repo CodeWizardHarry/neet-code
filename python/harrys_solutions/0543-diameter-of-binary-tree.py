@@ -20,7 +20,7 @@ class Solution:
 
             left = dfs(root.left)  # height of left node
             right = dfs(root.right)  # height of right node
-            res = max(res, left + right)  # tracks the diameter of the entire tree
+            res = max(res, left + right)  # tracks the max diameter of the entire tree
 
             return 1 + max(left, right)  # tracks the height of the current root
 
