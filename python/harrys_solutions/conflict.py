@@ -1,6 +1,2 @@
-name = selena
-
-
-
-
-statement = omfffg justin seriously cheated on me 
+a = apple
+b = swag
