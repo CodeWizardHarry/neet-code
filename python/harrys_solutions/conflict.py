@@ -1,10 +1,6 @@
-
-name = main
-
+name = selena
 
 
 
 
-
-
-statement = watupppp
+statement = justin cheated on me 
