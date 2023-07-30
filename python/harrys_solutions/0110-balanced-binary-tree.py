@@ -39,3 +39,31 @@ class Solution:
             return [balanced, height]
 
         return dfs(root)[0]
+
+
+
+# the approach below is a top down, it a lot more time and 
+# will calculatet the meax depth top down meaning , a lot of repeated work involved
+
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
+        
+        left = self.max_depth(root.left)  # only these two lines are top down, top down line
+        right = self.max_depth(root.right)  # top down line 
+        
+        left_balanced = self.isBalanced(root.left)
+        right_balanced = self.isBalanced(root.right)
+        is_balanced = abs(left - right) <= 1 and left_balanced and right_balanced
+
+        return is_balanced
+
+    def max_depth(self, root):
+        if not root:
+            return 0
+        
+        left = self.max_depth(root.left)
+        right = self.max_depth(root.right)
+
+        return 1 + max(left, right)
