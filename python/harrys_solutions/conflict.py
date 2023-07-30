@@ -1,3 +1,2 @@
 a = apple
-b = banana
-c = durian
+b = I didn't cheat on selena
