@@ -1,3 +1,2 @@
-a = apple
-b = banana
-c = durian
+a = selena
+b = justin cheated on me 
