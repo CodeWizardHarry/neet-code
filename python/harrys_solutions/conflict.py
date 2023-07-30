@@ -1,2 +1,3 @@
-a = selena
-b = justin cheated on me 
+a = apple
+name = selena
+statement = justin cheated on me 
