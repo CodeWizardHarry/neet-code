@@ -3,4 +3,4 @@ name = selena
 
 
 
-statement = omffg justin seriously cheated on me 
+statement = omfffg justin seriously cheated on me 
