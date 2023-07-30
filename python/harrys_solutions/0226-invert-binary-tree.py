@@ -12,7 +12,7 @@ class Solution:
         Given the root of a binary tree, invert the tree
 
         Returns:
-        - TreeeNode: Root of the tree
+            TreeeNode: Root of the tree
         """
 
         if not root:

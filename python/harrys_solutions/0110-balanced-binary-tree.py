@@ -22,7 +22,8 @@ class Solution:
         2. create an array for each dsf to track [balance_status, height of current tree]
         3.
 
-        Returns: True if it's height-balanced tree, otherwise return false
+        Returns:
+            True if it's height-balanced tree, otherwise return false
         """
 
         def dfs(root):
@@ -31,7 +32,9 @@ class Solution:
 
             left, right = dfs(root.left), dfs(root.right)
             balanced = left[0] and right[0] and abs(left[1] - right[1]) <= 1
-            height = 1 + max(left, right)  # tracks height of the current node, height of a tree is the number of layers in a tree
+            height = 1 + max(
+                left, right
+            )  # tracks height of the current node, height of a tree is the number of layers in a tree
 
             return [balanced, height]
 
