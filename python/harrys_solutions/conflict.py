@@ -1,2 +1,10 @@
-a = apple
-b = swag
+
+name = main
+
+
+
+
+
+
+
+statement = watupppp
