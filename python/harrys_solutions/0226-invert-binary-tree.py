@@ -4,38 +4,29 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-
-
+        
 class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
-        """ "
+        """"
         Given the root of a binary tree, invert the tree
-
+        
         Returns:
-            TreeeNode: Root of the tree
+        - TreeeNode: Root of the tree
+        
         """
+        
+        def dfs(root):
+            if not root:
+                return 
 
-        if not root:
-            return None
+            temp = root.left
+            root.left = root.right
+            root.right = temp
+            
+            dfs(root.left)
+            dfs(root.right)
 
-        temp = root.left
-        root.left = root.right
-        root.right = temp
+            return root 
 
-        self.invertTree(root.left)
-        self.invertTree(root.right)
+        return dfs(root)
 
-        return root
-
-        # official solution
-        # if not root:
-        #     return None
-
-        # # swap the children
-        # tmp = root.left
-        # root.left = root.right
-        # root.right = tmp
-
-        # self.invertTree(root.left)
-        # self.invertTree(root.right)
-        # return root
