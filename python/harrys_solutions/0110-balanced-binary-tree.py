@@ -42,7 +42,7 @@ class Solution:
 
 
 
-# the approach below is a top down, it a lot more time and 
+# the approach below is a top down, it takes a lot more time and 
 # will calculatet the meax depth top down meaning , a lot of repeated work involved
 
 class Solution:

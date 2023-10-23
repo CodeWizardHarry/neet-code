@@ -30,11 +30,13 @@ class Solution:
             if not root:
                 return 0
 
-            left = dfs(root.left)  # height of left node
-            right = dfs(root.right)  # height of right node
-            res = max(res, left + right)  # tracks the max diameter of the entire tree
+            left = dfs(root.left)  
+            right = dfs(root.right)  
+            # notice that the only difference between this question and
+            # 104 - maximum Depth of Binary Tree is the extra line added below
+            res = max(res, left + right)    
 
-            return 1 + max(left, right)  # tracks the height of the current root - same as the maxDpeth function
+            return 1 + max(left, right)  
 
         dfs(root)
         return res

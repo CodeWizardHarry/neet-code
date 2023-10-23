@@ -1,5 +1,6 @@
-
 from typing import List
+
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         prevMap = {}  # val -> index
@@ -12,4 +13,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.twoSum([1,2,3,4,5], target=9))
+print(solution.twoSum([1, 2, 3, 4, 5], target=9))
