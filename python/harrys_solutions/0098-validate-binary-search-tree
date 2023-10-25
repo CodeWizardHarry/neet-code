@@ -6,23 +6,18 @@ class TreeNode:
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
 
-        # all nodes on the right side must be bigger than r
-        r = 1 
-        # all nodes on the left side must be smaller than l
-        l = 1
 
-        def dfs(root,l, r):
+        def dfs(root, left, right):
             if not root:
                 return True
-            l = min(l, root.val)
-            r = max(r, root.val)
-
-            left = dfs(root.left, l, r)
-            right = dfs(root.right, l, r)
+            
+            if not (left < root.val < right):
+                return False
+            
+            return dfs(root.left, left, root.val) and dfs(root.right, root.val, right)
             
 
-
-
+        return dfs(root, float('-inf'), float('inf'))
 
 
 
