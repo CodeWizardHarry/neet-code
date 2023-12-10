@@ -1,4 +1,6 @@
 # this version is esier to understand, from leetcode solutions by lukskywalkerrr
+# nums[:] is a shallow copy, sufficient because integers are immutable
+
 class Solution:
     def permute(self, l: List[int]) -> List[List[int]]:
         res = []
@@ -22,3 +24,28 @@ class Solution:
             
         dfs([], [False] * len(l))
         return res
+    
+    
+    
+## gpt4 solution
+
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        def backtrack(first=0):
+            # If all integers are used up
+            if first == n:
+                output.append(nums[:])
+            for i in range(first, n):
+                # Place i-th integer first in the current permutation
+                nums[first], nums[i] = nums[i], nums[first]
+                # Use next integers to complete the permutations
+                backtrack(first + 1)
+                # Backtrack
+                nums[first], nums[i] = nums[i], nums[first]
+        
+        n = len(nums)
+        output = []
+        backtrack()
+        return output
+
+# Example usage:

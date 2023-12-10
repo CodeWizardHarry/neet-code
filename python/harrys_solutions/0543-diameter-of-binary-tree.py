@@ -1,4 +1,15 @@
 # Definition for a binary tree node.
+
+""""
+Notes:
+1. need to create two important variable
+2. one to track the res , which is the max length of the overall tree
+3. one to track current node's max depth
+
+"""
+
+
+
 from typing import Optional
 
 
