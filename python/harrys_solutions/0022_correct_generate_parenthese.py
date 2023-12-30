@@ -1,27 +1,14 @@
-#GPT
+[0,3,5,7,10]
+l   
+   r 
 
-class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
-        subset = []
-        res = []
 
-        def dfs(total):
-            # Check if the current state is invalid or if we've reached the solution
-            if total < 0 or len(subset) > 2 * n:
-                return
-            if len(subset) == 2 * n and total == 0:
-                res.append(''.join(subset))
-                return
-
-            # Add an open parenthesis
-            subset.append('(')
-            dfs(total + 1)
-            subset.pop()
-
-            # Add a close parenthesis
-            subset.append(')')
-            dfs(total - 1)
-            subset.pop()
-
-        dfs(0)
-        return res
+while l <= r:
+    m = (l + r) // 2
+    if last_col[m] < target: 
+        prev_l = l
+        l = m + 1
+    elif  target < last_col[m]:
+        r = m -1
+    else:
+        return True
