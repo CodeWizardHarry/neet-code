@@ -39,6 +39,4 @@ class Solution:
         return dummy.next
 
 
-d   1   2   3   4   5
-l                   r
-        r
+kjhjkhjkhk
