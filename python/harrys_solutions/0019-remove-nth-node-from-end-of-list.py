@@ -27,11 +27,18 @@ class Solution:
             n -= 1
             right = right.next
 
+
+
         while right:
             left = left.next
             right = right.next
 
-        # step3
+        # left.next = right    mistake1  this removes all the nodes between slow and fast rather than the nth node from the end
         left.next = left.next.next
 
         return dummy.next
+
+
+d   1   2   3   4   5
+l                   r
+        r
